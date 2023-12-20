@@ -1,0 +1,108 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+	background-color: #AD0076;
+	font-family: "Roteiro de Dança" , sans-serif;
+}
+
+.frame{
+	position: absolute;
+	background-color:#FF64C3 ;
+	top: 50%;
+	left: 50%;
+	windth:400px;
+	height: 400px;
+	transform: translate(-50%, -50%);
+	box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.6);
+}
+
+.frame, .card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flip-me {
+   position: absolute;
+   top: 30%;
+   left: 77%;
+   transform: rotate(-90deg);
+   font-size: 1.3rem;
+   color: rgba(255, 255, 255, 0.6);
+   color: #FC59AE ;
+}
+
+.front h1 {
+	font-family:  'Dancing Script', cursiva;
+	font-size:  8rem;
+	margin: 16px 80px;
+	color: #FC59AE;
+}
+
+.card:hover .flip {
+  transform: rotateX(180deg) translate3d(0px, 0px, 0px);
+  box-shadow: 8px -10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.flip {
+	transform-style: preserve-3d;
+	transition: all 0.7s ease-in-out;
+}
+
+.front, .back {
+     -webkit-backface-visibility: hidden ;
+     width: 100%;
+     height: 100%;
+     background-color: #70B8FF;
+ }
+
+.card .back {
+    transform: rotateX(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back{
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.back h2 {
+	font-size: 1.5rem;
+	font-family:'Dancing Script', cursive;
+	margin: 8px;
+	color: #E5007E;
+}
+
+.back h3 {
+	color: rgba(255, 255, 255, 0.8);
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5rem;
+	margin: 32px 0px;
+	color: #2229E6;
+}
+
+.back h4 {
+	font-size: 1.5rem;
+	font-family: 'Dancing Script', cursive;
+	margin: 8px;
+	color: #E5007E;
+}
+
+.back h5 {
+	font-size: 1.5rem;
+	font-family: 'Dancing Script', cursive;
+	margin: 6px;
+	color: #2229E6;
+}
+
+img {
+	width: 20px;
+	margin: pointer;
+}
+
+img:hover {
+	width: 32px;
+	cursor: pointer;
+}

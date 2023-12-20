@@ -1,0 +1,135 @@
+/* página toda */
+body{
+    background-color: #deeppink;
+    font-family: verdana;
+    color: black;
+    text-align: justify;
+    width: 85%;
+    margin: auto;
+}
+
+#topo {
+ background-color:dingray ;
+ padding: 20px;
+ margin-bottom: 0px;
+ border-bottom-right-radius: 50px;
+ border-bottom-left-radius: 50px
+}
+
+/* links */
+a {
+  color: #deeppink;
+  text-decoration: none;
+}
+ 
+a:hover{
+  color: black;
+}
+
+a:visited{
+  color: blue;
+}
+
+a:focus{
+  color: orangered;
+}
+
+a:active{
+  color: deeppink;
+}
+  
+  section{
+    padding: 64px 200px;
+  }  
+/* tabelas */
+table {
+      width: 100%;
+}
+
+td, th{
+  /*border: 3px dotted white; */
+  border-width: 2px;
+  border-style: groove;
+  border-color: white;
+  border-radius: 6px;
+  text-align: center;
+  padding: 3px;
+}
+
+th {
+   background-color: grey;
+   color: DB02C4;
+   text-align: center;
+}
+
+td {
+   background-color: deeppink;
+}
+  
+/* parágrafos */
+p {
+  text-align: justify-all;
+  text-indent: 50px;
+}
+
+/* imagens */
+    img {
+        width: 300px;
+        display: block;
+        margin: auto;
+        border-radius: 30px;
+}
+
+/* título */
+.título{
+      background-color: deeppink;
+      color: white;
+      text-align: center ;
+      font-size: 200%;
+}
+     
+/* Seções */
+    #l1 {
+      background-color: hotpink;
+    }
+    #l2{
+      background-color: red;
+    }
+    #l3{
+      background-color: orangered;
+    }
+    #l4{
+      background-color: black;
+    }
+    #l5{
+      background-color: deepskyblue;
+}
+ 
+ /* Tarefa de casa */
+ h3{
+  color: black;
+  text-align:center;
+  font-size:400%;
+  font-family:math;
+ }
+ h4{
+  color:whitesmoke;
+  /* text-aling: center; */
+ }
+
+ .subtítulo {
+  text-align:center;
+  font-size:120%;
+ }
+
+  #sumario {
+    color:whitesmoke;
+    background-color: deeppink;
+    border-radius:20px;
+    padding:20px;
+    margin:50px;
+  }
+
+  span {
+    color:goldenrod
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animações</title>
+
+  <style type="text/css">
+  	
+  	div{
+  		width: 100px;
+  		height: 100px;
+  		background-color: deeppink;
+  		animation: movimento 4s;
+  		animation-iteration-count: infinite;
+  	}
+  
+   @keyframes movimento{
+      0% {
+      	background-color: deeppink;
+      	transform: translateX(0px) rotate(0deg);
+   	  }
+
+   50% {
+   	background-color: royalblue;
+   	transform: translateX(200px) rotate(45deg);
+   }
+
+      100{
+      	background-color: orange;
+      	transform: translateX(0px) rotate(90deg);
+       }
+   }
+  
+
+
+  </style>
+
+</head>
+<body>
+  <h1>Este é um bloco animado</h1>
+  <div></div>
+</body>
+</html>

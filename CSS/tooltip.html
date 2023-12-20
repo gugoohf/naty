@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tooltip</title>
+
+ <style type="text/css">
+ 	 .tooltip {
+ 	 	border:1px solid ;
+ 	 	width: 100px;
+ 	 	height: 100px;
+ 	 	display: inline-block;
+ 	 }
+
+    .tooltip-text {
+ 	 	visibility: hidden;
+ 	 	background-color: deeppink;
+ 	 	color: darkblue;
+ 	 	border-radius: 5px;
+ 	 	padding: 5px;
+ 	 	position: absolute;
+ 	 	left: 50px;
+ 	 	z-index: 1;
+ 	 }
+ 
+   .tooltip-text::before{
+   	content: **;
+   	position: absolute;
+   	top: 50%;
+   	right: 100%;
+   	margin-top: -5px;
+   	border-width: 5px 5px 5px 0px;
+   	border-style: solid;
+   	border-right-color:black ;
+   }
+
+   .tooltip:hover .tooltip-text {
+   	   visibility: visible;
+   }
+
+ </style>
+
+</head>
+<body>
+
+<h1>Tooltip simples</h1>
+
+<button class="tooltip"> Passe o mouse por cima de min
+	<span class="tooltip-text">Este é um texto explicativo sobre o elemento </span>
+</button>
+
+
+</body>
+</html>

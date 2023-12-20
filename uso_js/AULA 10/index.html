@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Uso de JavaScript</title>
+
+  </head>
+<body>
+
+   <p id="p1">Isso é um parágrafo.</p>
+
+ <button type="button" onclick="mudarParagrafo()">Clique aqui</button>
+
+<script src="scrip.js"></script>
+
+   <p id="p2">  </p>
+  
+  <script type="text/javascript">
+     
+     document.getElementById("p2").innerHTML = 5 + 6;
+  
+  </script>
+
+  <p> Testando documento.write() sozinho: </p>
+  <script type="text/javascript">
+  	 
+    document.write(7 + 8);
+  
+  </script>
+
+  <p> Testando document.write() no botão: </p>
+ <button type="button" onclick="document.write(4 * 3)"> Botão</button>
+
+ <!-- <p> Testando o window.alert() </p>
+  <script type="text/javascript">
+ 	window.alert(7 / 2):
+ </script> -->
+
+   <p> Testando o console.log()</p>
+   <script type="text/javascript">
+   	console.log("Resultado da conta: ");
+   	console.log(9 + 6);
+   </script>
+
+   <p> Cáculo com documento.write(): </p>
+   <script type="text/javascript">
+   	  document.write(1 - 2 + "<br>");
+   	  document.write(7 + 8 + "<br");
+   	  document.write(6 * 2);
+   </script>
+
+  <!--
+  	Espaço em branco;
+  	  -recursos
+  	  -ao redor de operadores
+  	  -após vírgula
+  	  -antes e depois de comentários
+  	  -linha em branco 
+  	  -nos argumentos das funçoẽs
+  -->
+
+  <p> Testando espaço em branco: </p>
+  <script type="text/javascript">
+  	
+  	   // testando espaço em branco em argumentos de funções
+
+  	   document.write("Sem espaço <br>");
+  	   document.write( "Com espaço");
+  
+  </script>
+
+ <script type="text/javascript">
+ 	
+ 	document.write(150 + "<br>");
+ 	document.write(10.5 + "<br>");
+ 	document.write( " Isso é uma <i>string</i> <br>");
+ 	document.write( 'Isso também é uma string')
+ 
+ </script>
+
+<p> Variáveis: </p>
+<script type="text/javascript">
+	
+	/*
+	  tipos de declarações de variáveis:
+	  var
+	  let
+	  const
+	*/
+
+    var a = 1;
+    let b = 2;
+    const c = 3;
+    let num; 
+
+    document.write(a + b + c + "<br>")
+
+    num = 7;
+
+    document.write(num + "<br>")
+
+</script>
+
+ <p> Operadores Aritméticos: </p>
+ <script type="text/javascript">
+ 	
+ 	let n1 = 7;
+ 	let n2 = 3;
+
+ 	let soma = n1 + n2;
+ 	let sub = n1 - n2;
+ 	let div = n1 / n2;
+ 	let mult = n1 * n2;
+
+ 	document.write("<br> Soma: " + soma);
+   document.write('<br> Subtração:' + sub)
+   document.write("<br> Divisão: " + div);
+   document.write("<br> Multiplicação: " + mult);
+ 
+   /* 
+   Regras:
+     - pode conter: números e letra, underline (_) e cifrão ($)
+     - não pode: começa com número, acento, pontução, hifen ou + * / ^
+     */
+
+     let preço_ = 9.99;
+     const lim_ve190 = 90;
+
+     document.write("<br>" + preco_r$);
+
+       let precomaximo;
+       let precoMaximo;
+       let PrecoMaximo;
+ </script>
+
+</body>
+</html>

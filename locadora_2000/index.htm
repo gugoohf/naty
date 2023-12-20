@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Locadora 2000 </title>
+
+	<!--Bootstrap-->
+	<!-- referência CSS -->
+	<!-- referência CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- referências JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light" >
+    	<div class="container-fluid">
+    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    				
+                   <li class="nav-iten"> 
+                       <a href="tabfilmes" class="nav-link active" aria-current="page" > Filmes Disponíveis </a>
+                   </li>
+                   
+                   <li class="nav-iten dropon">
+                       <a href="drop" class="nav-link dropdown-toggle" id="dropGeneros" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Filmes por categoria </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    	<li><a class="dropdown-item" href="#gAcao">    Ação   </a></li>
+                    	<li><a class="dropdown-item" href="#gAnimacao">    Animação    </a></li>
+                    	<li><a class="dropdown-item" href="#gRomance">    Romance    </a></li>
+                    	<li><a class="dropdown-item" href="#gSuspense">    Suspense    </a></li>
+                    	<li><a class="dropdown-item" href="#gcomedia">    Comédia    </a></li>
+                    	<li><a class="dropdown-item" href="#gdrama">    Drama    </a></li>
+                    </ul>
+
+                   </li>
+                 	
+                   <li class="nav-iten">
+                 	   <a href="cadFilmes" class="nav-link">Cadastrar Filmes </a>
+                   </li>
+                </ul>
+            </div>
+
+           <img src="img/film.png" width="3%">
+           <a href="topo" class="navbar-brand">Locadora 2000</a>
+
+        </div>
+   </nav>
+
+  <div class="container">
+  	<table class="table table-striped table-hover">
+  		<!-- Cabeçalho da tabela -->
+  		<thead>
+  			<tr>
+  				<th scope="col"> Código </th>
+  				<th scope="col"> Título </th>
+  				<th scope="col"> Diretor </th>
+  				<th scope="col"> Lançamentos </th>
+  				<th scope="col"> Gênero </th>
+  				<th scope="col"> Ator/Atriz Principal </th>
+  				<th scope="col"> Nota IMDb </th>
+  			</tr>
+  		</thead>
+  	   
+        <!-- Corpo da Tabela -->
+  	    <tbody>
+  	    	<tr>
+  	    		<th class="text-center table-primary" colspan="10" id="gAcao"> Ação </th>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">1</th>
+  	    		<td>Lucy</td>
+  	    		<td> Luc Besson</td>
+  	    		<td>28 de agosto de 2014</td>
+  	    		<td>Ação</td>
+  	    		<td>Scarlett Johansson</td>
+  	    		<td>6,4/10</td>
+  	    	</tr>
+  	    	
+  	    	<tr>
+  	    		<th scope="row">2</th>
+  	    		<td>Alerta Vermelho</td>
+  	    		<td> Rawson Marshall Thurber</td>
+  	    		<td> 4 de novembro de 2021</td>
+  	    		<td>Ação</td>
+  	    		<td>Johnson, Gal Gadot e Ryan Reynolds</td>
+  	    		<td>6,3/10</td>
+  	    	</tr>
+
+  	    	<tr>
+  	    		<th class="text-center table-primary" colspan="10" id="ganimacao"> Animação </th>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">3</th>
+  	    		<td>O Poderoso Chefinho</td>
+  	    		<td>Tom McGrath</td>
+  	    		<td>30 de março de 2017</td>
+  	    		<td>Animação</td>
+  	    		<td>Edie Mirman</td>
+  	    		<td>6,5/10</td>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">4</th>
+  	    		<td>Nimona</td>
+  	    		<td>Troy Quane, Nick Bruno</td>
+  	    		<td>23 de junho de 2023</td>
+  	    		<td>Animação</td>
+  	    		<td>Chloë Grace Moretz</td>
+  	    		<td>7,6/10</td>
+  	    	</tr>
+
+  	    	<tr>
+  	    		<th class="text-center table-primary" colspan="10" id="gRomance"> Romance </th>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">5</th>
+  	    		<td>Continência ao Amor</td>
+  	    		<td>Elizabeth Allen Rosenbaum</td>
+  	    		<td>29 de julho de 2022</td>
+  	    		<td>Romance</td>
+  	    		<td>Nicholas Galitzine e Sofia Carson</td>
+  	    		<td>6,7/10 </td>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">6</th>
+  	    		<td>Depois do Universo</td>
+  	    		<td>Diego Freitas</td>
+  	    		<td> 27 de outubro de 2022 </td>
+  	    		<td>Romance</td>
+  	    		<td>Nina e Henrique Zaga</td>
+  	    		<td>6,6/10</td>
+  	    	</tr>
+
+  	    	<tr>
+  	    		<th class="text-center table-primary" colspan="10" id="gSuspense"> Suspense </th>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">7</th>
+  	    		<td>A Chamada</td>
+  	    		<td>Nimród Antal</td>
+  	    		<td>24 de agosto de 2023</td>
+  	    		<td>Suspense</td>
+  	    		<td>Matt Turner</td>
+  	    		<td>7,1/10 </td>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">8</th>
+  	    		<td>Cidade de Deus</td>
+  	    		<td>Fernando Meirelles, Kátia Lud</td>
+  	    		<td> 30 de agosto de 2002 </td>
+  	    		<td>Suspense</td>
+  	    		<td>Alexandre Rodrigues</td>
+  	    		<td>8,6/10</td>
+  	    	</tr>
+
+           <tr>
+  	    		<th class="text-center table-primary" colspan="10" id="gcomedia"> Comédia </th>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">9</th>
+  	    		<td>Barbie</td>
+  	    		<td>Greta Gerwig</td>
+  	    		<td>20 de julho de 2023 </td>
+  	    		<td>Comédia</td>
+  	    		<td>Margot Robbit</td>
+  	    		<td>7,0/10 </td>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">10</th>
+  	    		<td>Cruella</td>
+  	    		<td>Craig Gillespie</td>
+  	    		<td> 27 de maio de 2021 </td>
+  	    		<td>Comédia</td>
+  	    		<td>Emma Stone</td>
+  	    		<td>7,3/10</td>
+  	    	</tr>
+
+  	    	 <tr>
+  	    		<th class="text-center table-primary" colspan="10" id="gdrama"> Drama </th>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">11</th>
+  	    		<td>Um Sonho de Liberdade</td>
+  	    		<td>Frank Darabont</td>
+  	    		<td>17 de março de 1995</td>
+  	    		<td>Drama</td>
+  	    		<td>Morgan Freeman</td>
+  	    		<td>9,3/10 </td>
+  	    	</tr>
+  	    	<tr>
+  	    		<th scope="row">12</th>
+  	    		<td>  Garota do Século 20 </td>
+  	    		<td> Bang Woo-ri </td>
+  	    		<td> 6 de outubro de 2022 </td>
+  	    		<td>Drama</td>
+  	    		<td>Kim Yoo-jung</td>
+  	    		<td>7,3/10</td>
+  	    	</tr>
+  	   
+  	    </tbody>
+  	</table>
+  </div>
+
+</body>
+</html>
